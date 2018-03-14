@@ -17,11 +17,14 @@
 	<reporting>
 
 		<plugins>
+		<!-- 
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-javadoc-plugin</artifactId>
 				<version>3.0.0</version>
 			</plugin>
+			
+			 -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-checkstyle-plugin</artifactId>
@@ -231,12 +234,12 @@
 			<name>snapshots</name>
 			<url>http://localhost:8081/repository/maven-snapshots/</url>
 		</snapshotRepository>
-		<!-- 
+		
 		<site>
-			<id>nexus-repo</id>
-			<url>dav:http://localhost:8081/repository/sites/</url>
+			<id>nexus</id>
+			<url>dav://localhost:8081/repository/sites/</url>
 		</site>
-		 -->
+		
 	</distributionManagement>
 
 
